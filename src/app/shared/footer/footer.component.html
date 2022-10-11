@@ -1,0 +1,32 @@
+<footer class="footer mt-5" [ngClass]="{'footer-default' : !noDefault}">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <ul>
+                    <li>
+                        <a i18n [routerLink]="['/impress']">
+                            Impress
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://beerpongleague.eu/home" target="_blank">
+                            Beer Pong League
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://suffapp.de" target="_blank">
+                            Suff App
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <div class="copyright">
+                    &copy;
+                    {{data | date: 'yyyy'}}, Designed and Coded by
+                    <a href="https://www.jan-schuettken.de" target="_blank">Jan&nbsp;Schüttken</a>. v{{version}}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

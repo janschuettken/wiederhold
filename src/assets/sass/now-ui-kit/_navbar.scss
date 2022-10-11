@@ -1,8 +1,8 @@
 .navbar{
     padding-top: $navbar-padding-base;
     padding-bottom: $navbar-padding-base;
-    min-height: 53px;
-    margin-bottom: 20px;
+    min-height: $navbar-min-height;
+    margin-bottom: $navbar-margin-bottom;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 
     a{
@@ -48,11 +48,13 @@
             line-height: $line-height-nav-link;
 
             i.fab + p,
+            i.my-fab + p,
             i.now-ui-icons + p{
                 margin-left: 3px;
             }
 
             i.fab,
+            i.my-fab,
             i.now-ui-icons{
                 font-size: 18px;
                 position: relative;
@@ -80,9 +82,10 @@
         }
 
         .nav-item.active .nav-link:not(.btn),
-        .nav-item .nav-link:not(.btn):focus,
+        //.nav-item .nav-link:not(.btn):focus,
         .nav-item .nav-link:not(.btn):hover,
-        .nav-item .nav-link:not(.btn):active{
+        //.nav-item .nav-link:not(.btn):active
+        {
             background-color: $opacity-2;
             border-radius: $border-radius-small;
         }
