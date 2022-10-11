@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.0.1] 2022-10-12
+### Updates
+- update to Angular 13
+- changed content to wiederhold-stuttgart home page
+- nearly first working example
+
 ## [1.3.0] 2020-12-16
 ### Updates
 - update to Angular 11
